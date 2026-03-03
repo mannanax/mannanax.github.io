@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Mannan | Data-Driven Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        :root {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #0ea5e9;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-sky-600">MANNAN.AX</div>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="nav-link hover:text-sky-600 transition-colors">About</a>
+                <a href="#experience" class="nav-link hover:text-sky-600 transition-colors">Experience</a>
+                <a href="#skills" class="nav-link hover:text-sky-600 transition-colors">Skills</a>
+                <a href="#projects" class="nav-link hover:text-sky-600 transition-colors">Portfolio</a>
+                <a href="mailto:mannan.ax@gmail.com" class="text-sky-600 font-bold">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <i class="fas fa-bars text-2xl"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient min-h-screen flex items-center pt-20">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-white space-y-6">
+                <div class="inline-block px-4 py-1 bg-sky-500/20 rounded-full border border-sky-500/30 text-sky-400 font-semibold text-sm">
+                    Botanist & Data Professional
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    Precision <span class="text-sky-400">Analysis</span> Meets Creative Design.
+                </h1>
+                <p class="text-xl text-slate-300 max-w-lg">
+                    I am Abdul Mannan — bridging the gap between scientific accuracy and high-end visual communication.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105">View Portfolio</a>
+                    <a href="mailto:mannan.ax@gmail.com" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-xl font-bold backdrop-blur-sm transition-all">Hire Me</a>
+                </div>
+            </div>
+            <div class="hidden md:block relative">
+                <div class="w-full aspect-square bg-sky-500/10 rounded-full blur-3xl absolute -z-10 animate-pulse"></div>
+                <!-- Profile Image Container with your Logo Link -->
+                <div class="bg-white p-4 rounded-3xl shadow-2xl overflow-hidden transform hover:rotate-2 transition-transform duration-500">
+                    <img src="https://i.postimg.cc/k4YKdFGT/abm-logo-d.png" alt="Abdul Mannan Logo" class="w-full h-auto rounded-2xl block shadow-inner">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold">Scientific Mind, <span class="text-sky-600">Technical Hands.</span></h2>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    With a background in Botany, I've developed a rigorous eye for detail and analytical thinking. Over the last 3 years, I've applied these skills as a <span class="font-bold text-slate-900">Junior Data Analyst and Supervisor</span> at Golden Harvest Info Tech Ltd, managing complex datasets and leading technical teams.
+                </p>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    Outside the lab and data sheets, I am a passionate <span class="font-bold text-slate-900">Brand Designer</span>, helping international clients translate their values into visual identities that stand out.
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-6">
+                    <div>
+                        <h4 class="font-bold text-2xl text-sky-600">3+ Years</h4>
+                        <p class="text-sm text-slate-500 font-medium">Professional Experience</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-2xl text-sky-600">50+ Projects</h4>
+                        <p class="text-sm text-slate-500 font-medium">Completed Globally</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 p-8 rounded-[40px] border border-slate-200 shadow-sm relative overflow-hidden group">
+                <div class="absolute inset-0 bg-sky-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <h3 class="text-xl font-bold mb-4">Core Strengths</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-sky-500 mt-1 mr-4"></i>
+                        <span>Operational Management & Team Supervision</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-sky-500 mt-1 mr-4"></i>
+                        <span>Quality Control & 99% Accuracy Maintenance</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-sky-500 mt-1 mr-4"></i>
+                        <span>Advanced Data Entry & Spreadsheet Management</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-sky-500 mt-1 mr-4"></i>
+                        <span>Vector Branding & Adobe Creative Suite Proficiency</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-24 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Professional Experience</h2>
+                <div class="w-20 h-1 bg-sky-500 mx-auto"></div>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Job 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">Junior Data Analyst & Supervisor</h3>
+                            <p class="text-sky-600 font-semibold">Golden Harvest Info Tech Ltd.</p>
+                        </div>
+                        <div class="text-slate-500 font-medium mt-2 md:mt-0 text-right">
+                            <span class="block">July 2022 – Present</span>
+                            <span class="text-sm">Banani, Dhaka</span>
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-600 space-y-2 ml-4">
+                        <li>Managing large-scale datasets with 99% accuracy, ensuring data integrity for technical reports.</li>
+                        <li>Mentored 23 team members from entry to expert level, boosting team productivity by 25%.</li>
+                        <li>Streamlined data workflows, reducing manual entry errors by 15%.</li>
+                    </ul>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">Computer Operator</h3>
+                            <p class="text-sky-600 font-semibold">Navana Real Estate Ltd.</p>
+                        </div>
+                        <div class="text-slate-500 font-medium mt-2 md:mt-0 text-right">
+                            <span class="block">Jan 2020 – Jan 2022</span>
+                            <span class="text-sm">Gulshan, Dhaka</span>
+                        </div>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-600 space-y-2 ml-4">
+                        <li>Managed and digitized 5,000+ corporate records, streamlining data retrieval processes.</li>
+                        <li>Maintained 100% accuracy in backend data entry for housing inventory and client databases.</li>
+                    </ul>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">International Brand Designer</h3>
+                            <p class="text-sky-600 font-semibold">Freelancer</p>
+                        </div>
+                        <div class="text-slate-500 font-medium mt-2 md:mt-0">2021 — Active</div>
+                    </div>
+                    <ul class="list-disc list-inside text-slate-600 space-y-2 ml-4">
+                        <li>Crafted visual identities for global clients using Adobe Illustrator.</li>
+                        <li>Developed high-impact ad banners and photorealistic mockups for international brands.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Grid -->
+    <section id="skills" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-16 text-center">Skill Sets</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="skill-card p-8 rounded-3xl bg-slate-50 border border-slate-200">
+                    <div class="w-12 h-12 bg-sky-500 text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-sky-200">
+                        <i class="fas fa-chart-line text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-slate-900">Analytical</h4>
+                    <ul class="text-slate-600 space-y-2 font-medium">
+                        <li>Advanced Data Entry</li>
+                        <li>Data Visualization</li>
+                        <li>MS Excel / Google Sheets</li>
+                        <li>QC Reporting</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card p-8 rounded-3xl bg-slate-50 border border-slate-200">
+                    <div class="w-12 h-12 bg-sky-500 text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-sky-200">
+                        <i class="fas fa-palette text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-slate-900">Creative</h4>
+                    <ul class="text-slate-600 space-y-2 font-medium">
+                        <li>Adobe Illustrator</li>
+                        <li>Logo & Branding</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Social Media Design</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card p-8 rounded-3xl bg-slate-50 border border-slate-200">
+                    <div class="w-12 h-12 bg-sky-500 text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-sky-200">
+                        <i class="fas fa-flask text-xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4 text-slate-900">Scientific</h4>
+                    <ul class="text-slate-600 space-y-2 font-medium">
+                        <li>Botany (Taxonomy)</li>
+                        <li>Lab Supervision</li>
+                        <li>Technical Writing</li>
+                        <li>Quality Control</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Portfolio -->
+    <section id="projects" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div>
+                    <h2 class="text-4xl font-bold mb-4">Project Showcase</h2>
+                    <p class="text-slate-400">A blend of analytical precision and visual art.</p>
+                </div>
+                <a href="mailto:mannan.ax@gmail.com" class="text-sky-400 font-bold hover:underline mt-4 md:mt-0">Request Portfolio PDF →</a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Project 1 -->
+                <div class="group">
+                    <div class="aspect-video bg-slate-800 rounded-3xl mb-6 flex items-center justify-center overflow-hidden border border-white/10 group-hover:border-sky-500 transition-colors">
+                        <i class="fas fa-database text-6xl text-slate-700 group-hover:text-sky-500 transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Data Management Systems</h3>
+                    <p class="text-slate-400 mb-4">Overseeing complex data entry workflows for GHIT with a focus on zero-error methodology.</p>
+                    <div class="flex space-x-3 text-xs font-bold uppercase tracking-wider">
+                        <span class="px-3 py-1 bg-white/10 rounded-full">Analysis</span>
+                        <span class="px-3 py-1 bg-white/10 rounded-full">QC</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group">
+                    <div class="aspect-video bg-slate-800 rounded-3xl mb-6 flex items-center justify-center overflow-hidden border border-white/10 group-hover:border-sky-500 transition-colors">
+                        <i class="fas fa-vector-square text-6xl text-slate-700 group-hover:text-sky-500 transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Global Visual Identity</h3>
+                    <p class="text-slate-400 mb-4">Logo and branding designs for multiple international firms across the US and Europe.</p>
+                    <div class="flex space-x-3 text-xs font-bold uppercase tracking-wider">
+                        <span class="px-3 py-1 bg-white/10 rounded-full">Design</span>
+                        <span class="px-3 py-1 bg-white/10 rounded-full">Illustrator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="bg-slate-900 rounded-[40px] p-12 md:p-20 relative overflow-hidden text-white shadow-2xl">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/10 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+                <h3 class="text-2xl font-bold mb-4 text-sky-400">Abdul Mannan</h3>
+                <p class="text-sky-200 font-semibold mb-2">Botany Graduate • Data Analyst • Designer</p>
+                <p class="text-slate-400 mb-8 max-w-2xl mx-auto">Operations & Quality Control Specialist focused on streamlining business processes through data accuracy and professional visual standards.</p>
+                
+                <!-- Updated Contact Info -->
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+                    <a href="mailto:mannan.ax@gmail.com" class="flex items-center group text-slate-300 hover:text-white transition-colors">
+                        <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center mr-3 group-hover:bg-sky-500/20 transition-all">
+                            <i class="fas fa-envelope text-sky-400"></i>
+                        </div>
+                        <span class="text-lg">mannan.ax@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/mannanax" target="_blank" class="flex items-center group text-slate-300 hover:text-white transition-colors">
+                        <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center mr-3 group-hover:bg-sky-500/20 transition-all">
+                            <i class="fab fa-linkedin-in text-sky-400"></i>
+                        </div>
+                        <span class="text-lg">in/mannanax</span>
+                    </a>
+                </div>
+
+                <div class="flex justify-center flex-wrap gap-6 text-sm font-medium text-slate-400">
+                    <span class="flex items-center"><i class="fas fa-map-marker-alt mr-2 text-sky-500"></i> Banani, Dhaka</span>
+                    <span class="flex items-center"><i class="fas fa-check-circle mr-2 text-sky-500"></i> Immediate Availability</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-slate-400 text-sm">
+            <p>&copy; 2024 Abdul Mannan. Data-Driven Designer.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-sky-500 transition-colors">Back to Top</a>
+                <a href="https://www.linkedin.com/in/mannanax" class="hover:text-sky-500 transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
